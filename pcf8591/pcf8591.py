@@ -39,6 +39,6 @@ class PCF8591:
         try:
             val = int(val)
             self.bus.write_byte_data(self.adr, 0x40, val)
-        except Exception, e:
-            print "Error: Device address: 0x%2X" % self.adr
-            print e
+        except Exception as e:
+            print("Error: Device address: 0x%2X" % self.adr)
+            print(e)
